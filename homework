@@ -1,0 +1,9 @@
+> data()
+> par(mfrow=c(2,1))
+> View(BOD)
+> ?BOD
+> plot(BOD$demand~BOD$Time,main="biochemical oxygen demand versus time",ylab= "demand",xlab = "Time",type="l")
+> View(USArrests)
+> ?USArrests
+> city_names <- row.names(USArrests)
+> barplot(USArrests$Murder,names = city_names, main = "Violent Crime Rates by US State in 1973", ylab = "Murder arrests (per 100,000)", xlab = "city names")
